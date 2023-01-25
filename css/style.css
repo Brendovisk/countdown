@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+  text-shadow: 3px 3px 0 #000;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #333;
+  color: #ded;
+  padding: 60px 30px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  max-width: 26ch;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+.countdown {
+  border: 3px solid #eee;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.countdown::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  background-image: url(../santa-hat.png);
+  background-size: contain;
+  aspect-ratio: 840 / 859;
+  width: 230px;
+  transform: rotate(25deg);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.countdown-wrapper {
+  display: flex;
+  line-height: 1.2;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+span {
+  border-bottom: 4px solid #eee;
+  width: 180px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+[data-countdown] {
+  font-size: 4rem;
+}
